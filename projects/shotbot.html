@@ -31,6 +31,10 @@
             margin-bottom: 0.5rem;
         }
 
+        header h2{
+            text-align:center
+        }
+
         header p {
             font-size: 1.2rem;
             opacity: 0.9;
@@ -131,14 +135,12 @@
 
     <nav>
         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://InNeedOfName.github.io/index.html">">Home</a></li>
         </ul>
     </nav>
     <main>
         <section id="projects">
-            <p>During an ACL tear, I was forced to sit on the couch. The allmighty algorithm did decide, that I should be shown Ice Hockey and I got interested. Once I saw the NHL API I got hooked.</p>
+            <p>During an ACL rupture, I was forced to sit on the couch. The allmighty algorithm did decide, that I should be shown Ice Hockey and I got interested. Once I saw the NHL API I got hooked.</p>
             <p>So I started writing away, analysing and visualising the data.</p>
             <br>
             <h2>What does it do?</h2>
@@ -151,6 +153,14 @@
                 </ul>
             </p>
             <h2>The project</h2>
+            <p>I based the project on the public documentation of the NHL API,which can be found  <a href="https://github.com/dword4/nhlapi">here</a></p>
+            <p>Using this data as a basis, I am performing some simple visualisations</p>
+            <br></br>
+            <img src="shotcard.jpg" alt="Shotcard"style="width:500px;height:600px;">
+            <br></br>
+            <p>As you can see, I am performing some visualisations as well as some analysis with the kernel densitiy estimation of the shotpositions.</p>
+            <p>The graph for a game is posted on an automated bluesky account, which can be found <a href="https://bsky.app/profile/shotbot.bsky.social">here</a></p>
+            <p>There exists one Version of the project which is purely working with API Calls, found here, and another version, found here, which moves the data into a sqlite database for further analysis.</p>
             <h2>Tech Stack</h2>
             <p>The following technologies were used within the project:</p>
             <ul>
@@ -158,9 +168,7 @@
             <li>SQLite</li>
             <li>NumPy</li>
             <li>matplotLib</li>
-            <li>pandas</li>
-            </ul>
-            
+            <li>pandas</li></ul>
         </section>
 
     </main>
